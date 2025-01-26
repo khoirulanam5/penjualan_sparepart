@@ -1,0 +1,35 @@
+<!-- File View di CodeIgniter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<button id="myButton">Show Alert</button>
+<button id="myButto">Show Alert</button>
+
+<script>
+document.getElementById('myButton').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Good job!',
+        text: 'You clicked the button!',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+    });
+});
+document.getElementById('myButto').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Good job!',
+        text: 'You clicked the button!',
+        icon: 'error',
+        confirmButtonText: 'Cool'
+    });
+});
+</script>
+
+</body>
+</html>

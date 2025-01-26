@@ -1,0 +1,119 @@
+{
+    "counter": [
+        {
+            "menu": "Sparepart",
+            "link": "Produk",
+            "menusub": [
+                {
+                    "menu_sub": "Sparepart",
+                    "link_sub": "Produk"
+                },
+                {
+                    "menu_sub": "Kategori Sparepart",
+                    "link_sub": "Kategori"
+                },
+                {
+                    "menu_sub": "Stok Sparepart",
+                    "link_sub": "Stok"
+                }
+            ]
+        }
+    ],
+    "kepala_bengkel": [
+        {
+            "menu": "Data User",
+            "link": "User",
+            "menusub": [
+                {
+                    "menu_sub": "Pegawai",
+                    "link_sub": "Pegawai"
+                },
+                {
+                    "menu_sub": "Pelanggan",
+                    "link_sub": "Pelanggan"
+                }
+            ]
+        },
+        {
+            "menu": "Laporan",
+            "link": "Laporan",
+            "menusub": [
+                {
+                    "menu_sub": "Penjualan Online",
+                    "link_sub": "Penjualan"
+                },
+                {
+                    "menu_sub": "Penjualan Offline",
+                    "link_sub": "Penjualan_off"
+                }
+            ]
+        }
+    ],
+    "frontdesk": [
+        {
+            "menu": "Data User",
+            "link": "User",
+            "menusub": [
+                {
+                    "menu_sub": "Pegawai",
+                    "link_sub": "Pegawai"
+                },
+                {
+                    "menu_sub": "Pelanggan",
+                    "link_sub": "Pelanggan"
+                }
+            ]
+        },
+        {
+            "menu": "FP Growth",
+            "link": "Transaksi",
+            "menusub": [
+                {
+                    "menu_sub": "Analisa FP Growth",
+                    "link_sub": "Analisa_fp_growth"
+                }
+            ]
+        },
+        {
+            "menu": "Laporan",
+            "link": "Laporan",
+            "menusub": [
+                {
+                    "menu_sub": "Penjualan Online",
+                    "link_sub": "Penjualan"
+                },
+                {
+                    "menu_sub": "Penjualan Offline",
+                    "link_sub": "Penjualan_off"
+                }
+            ]
+        }
+    ],
+    "kasir": [
+        {
+            "menu": "Transaksi",
+            "link": "Transaksi",
+            "menusub": [
+                {
+                    "menu_sub": "Penjualan Online",
+                    "link_sub": "Penjualan"
+                },
+                {
+                    "menu_sub": "Penjualan Offline",
+                    "link_sub": "Penjualan_off"
+                },
+                {
+                    "menu_sub": "Ongkir Toko",
+                    "link_sub": "ongkir_toko"
+                }
+            ]
+        }
+    ],
+    "action": [
+        "Add",
+        "Edit",
+        "Delete",
+        "Detail",
+        "List"
+    ]
+}

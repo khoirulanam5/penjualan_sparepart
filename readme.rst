@@ -1,70 +1,122 @@
-###################
-What is CodeIgniter
-###################
+# 🛠️ Sistem Penjualan Sparepart dengan Algoritma **FP-Growth**
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Sistem ini digunakan untuk mengelola penjualan sparepart dengan fitur *market basket analysis* menggunakan **algoritma FP-Growth** untuk menemukan pola pembelian pelanggan. Sistem dilengkapi dengan manajemen stok, transaksi, laporan, serta landing page modern.
 
-*******************
-Release Information
-*******************
+---
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+## 🚀 Teknologi yang Digunakan
 
-**************************
-Changelog and New Features
-**************************
+* **Backend:** CodeIgniter 3
+* **Database:** MySQL
+* **Frontend:** HTML, CSS, JavaScript, Bootstrap
+* **Algoritma:** FP-Growth (Frequent Pattern Growth)
+* **UI:** Landing page modern dan responsif
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+---
 
-*******************
-Server Requirements
-*******************
+## 👥 Role Pengguna
 
-PHP version 5.6 or newer is recommended.
+### 1. **Counter**
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+* Input data layanan / sparepart masuk
+* Verifikasi kebutuhan pelanggan awal
 
-************
-Installation
-************
+### 2. **Kasir**
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+* Melakukan transaksi penjualan
+* Input item pembelian
+* Cetak struk
 
-*******
-License
-*******
+### 3. **Frontdesk**
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+* Mengatur antrian service
+* Melayani pelanggan yang membutuhkan konsultasi
 
-*********
-Resources
-*********
+### 4. **Kepala / Pimpinan**
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+* Melihat laporan penjualan
+* Melihat hasil analisis pola pembelian (FP-Growth)
+* Monitoring aktivitas seluruh user
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+### 5. **Pelanggan**
 
-***************
-Acknowledgement
-***************
+* Melihat informasi sparepart
+* Melakukan pemesanan pada landing page
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+---
+
+## ⭐ Fitur Unggulan
+
+### 🔹 **1. Manajemen Sparepart**
+
+* Tambah, edit, hapus sparepart
+* Cek stok & pengingat stok minimum
+
+### 🔹 **2. Transaksi Penjualan**
+
+* Input pembelian pelanggan
+* Cetak struk
+* Riwayat transaksi lengkap
+
+### 🔹 **3. Algoritma FP-Growth**
+
+* Analisis pola pembelian berdasarkan data penjualan
+* Menghasilkan frequent itemset
+* Rekomendasi produk yang sering dibeli bersama
+
+### 🔹 **4. Laporan Lengkap**
+
+* Laporan penjualan harian, mingguan, bulanan
+* Laporan stok
+* Laporan hasil analisis FP-Growth
+
+### 🔹 **5. Landing Page Modern**
+
+* Informasi sparepart
+* Promo & rekomendasi
+* Responsif dan interaktif
+
+---
+
+## 📂 Struktur Folder (Singkat)
+
+```
+/application
+    /controllers
+    /models
+    /views
+/assets
+    /css
+    /js
+    /img
+/database
+    sparepart_fp.sql
+/index.php
+```
+
+---
+
+## 🛠️ Instalasi
+
+1. Clone atau download project
+2. Import database `sparepart_fp.sql`
+3. Atur koneksi database di `/application/config/database.php`
+4. Jalankan di localhost (XAMPP, Laragon, dsb.)
+
+---
+
+## 🧠 Tentang Algoritma FP-Growth
+
+Algoritma FP-Growth digunakan untuk menemukan pola pembelian pelanggan tanpa perlu membangkitkan candidate itemset seperti Apriori. Kelebihannya:
+
+* Lebih cepat dan efisien
+* Cocok untuk dataset besar
+* Memberikan insight untuk rekomendasi produk
+
+---
+
+## 📝 Lisensi
+
+Project ini dibuat untuk kebutuhan sistem penjualan dan analisis pola pembelian menggunakan FP-Growth.
+
+---
